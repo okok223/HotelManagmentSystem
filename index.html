@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="shortcut icon" href="C:\Users\fasof\Downloads\hotelicon.png" type="image/x-icon">
+  <>
+</head>
+<body>
+    <script src="C:\Users\fasof\HotelManagmentSystem\app.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#reservation-panel">Reservations</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#log-in-panel">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home"></section>
+
+  <main>
+
+    <div class="mainImage">
+    <img src="C:\Users\fasof\Downloads\Le Monde Logo.jpg" style="width: 25%;">
+    </div>
+
+    <h1>Welcome to Our Hotel</h1>
+    <p>We offer comfortable rooms and excellent services for your stay.</p>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="C:\Users\fasof\Downloads\livingroom.jpg" style="width:100%">
+          <div class="text">Living Room</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="C:\Users\fasof\Downloads\Bedroom.jpg" style="width:100%">
+          <div class="text">Kitchen</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="C:\Users\fasof\Downloads\bed.jpg" style="width:100%">
+          <div class="text">Bedroom</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+//pictures slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
+ 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+ 
+</script>
+        
+<div class="hotel-info-container">        
+<div class="topSection">
+    <h3>Le Monde</h3>
+    <h5>Comfort Meets Elegance</h5>
+    <p> Whether you’re here for business or pleasure, you’ve come to the right place. <br>
+        LE MONDE offers maximum convenience at competitive fares. 
+        Make sure to book your reservation today - see you soon! </p>
+       <img src="C:\Users\fasof\Downloads\hotelfront.jpg" style="width: 80%;">
+    </div>  
+    </div>
+
+    <div class="hotel-info-container1">
+<div class="middleSection">
+    <h3>THE STORY OF LE MONDE</h3>
+    <h5>Your Visit Starts Here</h5>
+    <p>We offer numerous amenities and services to make your stay at LE MONDE a pleasure. <br>
+       We’re dedicated to blending comfort and convenience to provide you with the attention and luxury you deserve. <br>
+       Featuring impeccable accommodations and an attentive staff, we guarantee you’ll have a pleasant experience here. <br>
+       Explore what we have to offer and book a room today. <br></p>
+       <img src="C:\Users\fasof\Downloads\bed1.jpg" style="width:80%"> <br>
+    </div>
+</div>
+<section id="rooms">
+<div class="hotel-info-container2">
+<div class="middleSection">
+       <h3>OUR ROOMS & SUITES</h3>
+       <h5>Elegance and Comfort</h5>
+       <p>At LE MONDE, we provide several accommodation options. <br>
+         Each room has been carefully designed to ensure our guests have everything they need during their stay. <br>
+         Browse our options below to find out more. <br>
+       </p>
+       <div class="links-for-rooms">
+       <a href="#standart-Room">Standart Room</a>
+       <a href="#Apartaments">Apartaments</a>
+       <a href="#family-Suites">Family suites</a>
+       </div>
+       <div class="pictures-for-rooms">
+       <img src="C:\Users\fasof\Downloads\standartroom.jpg" style="width:11.9em">
+       <img src="C:\Users\fasof\Downloads\apartaments.jpg" style="width:11.9em">
+       <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:11.9em">
+    </div>
+    </div>
+    </div>
+</section>
+
+    <div class="hotel-info-container7">
+        <div class="middlesection">
+    <section id="standart-Room">
+    <h3>STANDART ROOMS</h3>
+    <p>LeMondes Standart Room <br>
+      The size of the rooms vary from 20sqm to 40sqm <br>
+      You can either choose between the rooms with a king bed or 2 twin beds <br>
+      Included is also Free Wifi, Air conditioning, Cable TV, Mini fridge <br>
+      Max occupancy 2 Adults <br>
+      Price range is between 35-50 € <br>
+       
+    </p>
+    <img src="C:\Users\fasof\Downloads\standartroom.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\apartaments.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:35%">
+    </section>
+    <section id="Apartaments">
+    <h3>APARTAMENTS</h3>
+    <p>LeMondes Comfort Room <br>
+      The size of the rooms vary from 45sqm to 75sqm <br>
+      You can either choose between the rooms with a king bed or 2 twin beds <br>
+      Included is also Free Wifi, Air conditioning, Cable TV, Mini fridge <br>
+      Max occupancy 2-8 Adults <br>
+      Price range is between 50-120 € <br>
+    <img src="C:\Users\fasof\Downloads\standartroom.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\apartaments.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:35%">
+    </section>
+    <section id="family-Suites">
+    <h3>FAMILY SUITES</h3>
+    <p>LeMondes Biggest Room <br>
+      The size of the rooms vary from 50sqm to 115sqm <br>
+      You can either choose between the rooms with a king bed or 2 twin beds <br>
+      Included is also Free Wifi, Air conditioning, Cable TV, Mini fridge <br>
+      Max occupancy 2 Adults <br>
+      Price range is between 45-80 € <br>
+     <img src="C:\Users\fasof\Downloads\standartroom.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\apartaments.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:35%">
+    <img src="C:\Users\fasof\Downloads\familysuite.jpg" style="width:35%">
+    </section>
+    </div>
+    </div>
+    </div>
+
+    <div class="hotel-info-container3">
+    <div class="middleSection">
+       <h3>OUR SERVICES</h3>
+       <h5>We’re Here for You</h5>
+       <p>We want your stay with us to be as special and easy as possible. <br>
+         LE MONDE has carefully crafted a list of services and amenities with just that in mind. <br>
+         Take a look at what we have to offer below. <br></p>
+         <img src="C:\Users\fasof\Downloads\daily-parking.jpg" style="width:30%">
+         <img src="C:\Users\fasof\Downloads\wifi-symbol.jpg" style="width:30%">
+         <img src="C:\Users\fasof\Downloads\Hotel Room with Pillows.jpg" style="width:30%">
+        </div>
+    </div>
+</div>
+
+<section id="reservation-panel">
+    <div class="hotel-info-container5">
+<div class="middlesection">
+    <h3>MAKE YOUR RESERVATION NOW</h3>
+    <form id="reservation-form">
+      <h3>Reservation</h3>
+      <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type" required>
+          <option value="">Select Room Type</option>
+          <option value="single">Apartament</option>
+          <option value="double">Family suite</option>
+          <option value="deluxe">Standart room</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="check-in">Check-In:</label>
+        <input type="date" id="check-in" name="check-in" required>
+      </div>
+      <div class="form-group">
+        <label for="check-out">Check-Out:</label>
+        <input type="date" id="check-out" name="check-out" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    
+</div>
+</div> 
+</section>
+
+
+<section id="log-in-panel">
+    <div class="hotel-info-container6">
+<div class="middlesection">
+    <h3>Log in</h3>
+    <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary" name="submit">Log In</button>
+        <button type="submit" class="btn btn-secondary" name="submit">Sign Up</button>
+      </form>
+</div>
+</div> 
+</section>
+
+
+<section id="contact-us">  
+<div class="hotel-info-container4">
+        <div class="bottomSection">
+            <h3>Contact</h3>
+            <p>Our friendly staff will be happy to assist you with any questions or concerns. <br>
+                Rruga e Plazhit, Borsh, Albania <br>
+                lemondehotel@outlook.com <br>
+                +355 69 241 7610 </br> </p>
+        </div>
+    </div>
+    </section>
+ 
+  </main>
+  
+
+  <footer>
+    <p>Copyright &copy; 2023 Hotel Management System</p>
+  </footer>
+</body>
+</html>
